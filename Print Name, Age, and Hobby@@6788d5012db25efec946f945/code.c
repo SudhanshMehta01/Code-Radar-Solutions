@@ -2,7 +2,7 @@
 int main(){
     int b;
     char a[100],c[100];
-    scanf("%s %d %[^]",a,&b,c);
+    scanf("%s %d %[^\n]",a,&b,c);
     
     printf("Name: %s",a);
     printf("Age: %d",b);t
