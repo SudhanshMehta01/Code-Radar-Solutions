@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    double num;
+    int num;
 
     // Input a number from user
     
