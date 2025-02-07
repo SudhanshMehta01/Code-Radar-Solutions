@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     char x;
-    scanf("%c",x);
+    scanf("%c",&x);
     vowels = "a" , "e" , "i" , "o" ,"u";
     Digit = 1,2,3,4,5,6,7,8,9,0;
     special character = !,@,$,%,%,&,*,(,),_;
