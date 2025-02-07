@@ -5,7 +5,7 @@ int main() {
 
     // Input a number from user
     
-    scanf("%ld", &num);
+    scanf("%d", &num);
 
     // Check if the LSB (Least Significant Bit) is set or not
     if (num & 1)
