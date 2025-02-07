@@ -1,21 +1,34 @@
 #include <stdio.h>
-int main(){
+#include <ctype.h>
+
+int main() {
     char x;
-    scanf("%c",&x);
-    vowels = "a" , "e" , "i" , "o" ,"u";
-    Digit = 1,2,3,4,5,6,7,8,9,0;
-    special character = !,@,$,%,%,&,*,(,),_;
-    if ( x == vowels ){
-        printf("Vowel");
+    
+    // Taking character input
+    printf("Enter a character: ");
+    scanf("%c", &x);
+
+    // Check if the character is a vowel
+    if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u' ||
+        x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U') {
+        printf("Vowel\n");
     }
-    else if (x== Digit){
-        printf("Digit");
+    // Check if the character is a digit
+    else if (x >= '0' && x <= '9') {
+        printf("Digit\n");
     }
-    else if (x== special character){
-        printf("Special Character");
+    // Check if the character is a special character
+    else if ((x >= 33 && x <= 47) || (x >= 58 && x <= 64) || 
+             (x >= 91 && x <= 96) || (x >= 123 && x <= 126)) {
+        printf("Special Character\n");
     }
-    else{
-        printf("Consonant");
+    // Otherwise, it's a consonant
+    else if (isalpha(x)) {
+        printf("Consonant\n");
+    } 
+    else {
+        printf("Invalid character\n");
     }
+    
     return 0;
 }
