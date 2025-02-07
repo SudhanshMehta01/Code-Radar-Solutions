@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    double num;
 
     // Input a number from user
     
-    scanf("%d", &num);
+    scanf("%ld", &num);
 
     // Check if the LSB (Least Significant Bit) is set or not
     if (num & 1)
