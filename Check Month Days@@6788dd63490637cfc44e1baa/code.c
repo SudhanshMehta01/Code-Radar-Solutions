@@ -9,7 +9,7 @@ int main(){
         printf("28");
     }
     else if (a>12){
-        printf("Invalid Month")
+        printf("Invalid Month");
     }
     else{
         printf("30");
