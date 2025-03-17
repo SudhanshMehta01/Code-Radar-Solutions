@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 // Function to implement Bubble Sort
@@ -18,9 +17,12 @@ void bubbleSort(int arr[], int n) {
 // Function to print the sorted array
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d", arr[i]);
+        if (i != n - 1) {
+            printf(" "); // Space between numbers
+        }
     }
-    printf("\n");
+    printf("\n"); // Newline at the end
 }
 
 int main() {
